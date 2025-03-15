@@ -1,0 +1,31 @@
+:root {
+  /* Backgrounds & Surfaces */
+  --color-background-rgb: 8, 9, 10;
+  --color-foreground-rgb: 247, 248, 248;
+
+  /* Text Colors */
+  --color-text-primary-rgb: 247, 248, 248;
+  --color-text-secondary-rgb: 208, 214, 224;
+
+  /* Borders */
+  --color-border-primary-rgb: 35, 37, 42;
+}
+
+/* Dark mode (if needed) */
+.dark {
+  --color-background-rgb: 0, 0, 0;
+  --color-foreground-rgb: 255, 255, 255;
+}
+
+/* Fallback */
+.bg-background {
+  background-color: rgb(var(--color-background-rgb));
+}
+
+.text-primary {
+  color: rgb(var(--color-text-primary-rgb));
+}
+
+.border-primary {
+  border-color: rgb(var(--color-border-primary-rgb));
+}

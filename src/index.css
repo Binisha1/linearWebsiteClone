@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  /* Backgrounds & Surfaces */
+  --color-background-rgb: 8, 9, 10;
+  --color-foreground-rgb: 247, 248, 248;
+
+  /* Text Colors */
+  --color-text-primary-rgb: 247, 248, 248;
+  --color-text-secondary-rgb: 208, 214, 224;
+  --color-text-tertiary-rgb: 138, 143, 152;
+  --color-link-hover-rgb: 255, 255, 255;
+
+  /* Foreground */
+  --color-fg-primary-rgb: 247, 248, 248;
+  --color-fg-secondary-rgb: 208, 214, 224;
+  --color-fg-tertiary-rgb: 138, 143, 152;
+
+  /* Borders */
+  --color-border-primary-rgb: 35, 37, 42;
+}
+
+/* Backgrounds */
+.bg-background {
+  background-color: rgb(var(--color-background-rgb));
+}
+.bg-foreground {
+  background-color: rgb(var(--color-foreground-rgb));
+}
+
+/* Text Colors */
+.text-primary {
+  color: rgb(var(--color-text-primary-rgb));
+}
+.text-secondary {
+  color: rgb(var(--color-text-secondary-rgb));
+}
+.text-tertiary {
+  color: rgb(var(--color-text-tertiary-rgb));
+}
+.text-link-hover {
+  color: rgb(var(--color-link-hover-rgb));
+}
+
+/* Foreground */
+.fg-primary {
+  color: rgb(var(--color-fg-primary-rgb));
+}
+.fg-secondary {
+  color: rgb(var(--color-fg-secondary-rgb));
+}
+.fg-tertiary {
+  color: rgb(var(--color-fg-tertiary-rgb));
+}
+
+/* Borders */
+.border-primary {
+  border-color: rgb(var(--color-border-primary-rgb));
+}
