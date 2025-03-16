@@ -41,10 +41,27 @@
     @apply text-[3.2rem] tracking-tighter text-[var(--color-text-primary)] leading-[3.75rem] font-medium;
   }
   .space-container {
-    @apply max-w-[59rem] mx-auto px-4;
+    @apply max-w-[59rem] py-[160px] mx-auto px-4;
   }
-  .button {
-    @apply bg-[var(--color-button)] text-[var(--color-text-black)] rounded-lg px-4 py-2;
+
+  .button-primary {
+    @apply bg-button  text-background px-2 py-1 text-xs font-medium rounded-[10px] transition cursor-pointer;
+  }
+  .button-secondary {
+    @apply text-xs text-text-secondary hover:text-text-primary transition;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(
+      to right,
+      var(--color-text-primary),
+      var(--color-text-secondary)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
