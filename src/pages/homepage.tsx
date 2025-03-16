@@ -6,6 +6,7 @@ import HeroSection from "../components/heroSection";
 import IssueTracking from "../components/issueTracking";
 import MadeFor from "../components/madeFor";
 import Navbar from "../components/navbar";
+import PlanPresent from "../components/planPresent";
 import SetProduction from "../components/setProduction";
 import "../global.css";
 
@@ -20,6 +21,7 @@ const Homepage = () => {
       <IssueTracking />
       <Collaborative />
       <BuiltStrong />
+      <PlanPresent />
       <Footer />
     </div>
   );

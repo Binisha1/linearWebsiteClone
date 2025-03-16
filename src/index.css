@@ -8,6 +8,7 @@
 
   --text-*: initial;
   --text-2xl: 3.2rem;
+  --text-xl: 2.5rem;
   --text-md: 1.313rem;
   --text-sm: 0.938rem;
   --text-xs: 0.875rem;
@@ -15,6 +16,7 @@
   --color-*: initial;
   --color-background: #08090a;
   --color-button: rgb(230, 230, 230);
+  --color-button-background: rgb(40, 40, 44);
   --color-bg-translucent: hsla(0, 0%, 100%, 0.05);
   /* Text Colors */
   --color-text-white: #fff;
@@ -54,7 +56,7 @@
   }
 
   .button-primary {
-    @apply bg-button  text-background px-2 py-1 text-xs font-medium rounded-[10px] transition cursor-pointer;
+    @apply bg-button  text-background px-2 py-1 text-xs font-medium rounded-[10px] transition cursor-pointer tracking-normal;
   }
   .button-secondary {
     @apply text-xs text-text-secondary hover:text-text-primary transition;
@@ -63,11 +65,7 @@
 
 @layer utilities {
   .text-gradient {
-    background: linear-gradient(
-      to right,
-      var(--color-text-primary),
-      var(--color-text-secondary)
-    );
+    background: linear-gradient(to right, #fff, var(--color-text-secondary));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -79,6 +77,7 @@ body {
   font-family: var(--font-family-inter);
   background-color: var(--color-background);
   color: var(--color-text-primary);
+  letter-spacing: -0.5px;
 }
 
 .hide-scroll-bar {

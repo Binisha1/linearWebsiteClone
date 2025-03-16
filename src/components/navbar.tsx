@@ -13,14 +13,16 @@ const Navbar = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   const navigate = useNavigate();
   return (
-    <div className=" bg-background border-border fixed left-0 top-0 w-full z-50  h-16">
+    <div className=" bg-background border-b border-border fixed left-0 top-0 w-full z-50  h-16">
       <div className="space-container pt-1  px-1 py-1 flex items-center justify-between">
         <div
           className="flex items-center cursor-pointer"
           onClick={() => navigate("/")}
         >
-          <img src="linear-icon.png" className="w-6 h-6 " />
-          <span className="text-lg  font-medium">Linear</span>
+          <img src="svgs/logo.svg" className="w-3 h-3 " />
+          <span className="text-lg ml-2 font-normal text-text-primary">
+            Linear
+          </span>
         </div>
         <nav>
           <ul className=" hidden lg:flex  space-x-4">

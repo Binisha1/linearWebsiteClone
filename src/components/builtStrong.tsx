@@ -40,6 +40,33 @@ const BuiltStrong = () => {
               </p>
             </div>
           </div>
+          <div className="flex flex-row">
+            <div className="border-1 border-border p-4">
+              <img src="https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/cc904d39-7051-4326-66a3-a8bee9623b00/f=auto,dpr=2,q=95,fit=scale-down,metadata=none" />
+              <div className="text-xs text-text-secondary text-center pt-2">
+                SOC 2
+                <img className="inline ml-0.5" src="svgs/certified.svg" />
+              </div>
+            </div>
+
+            <div className="border-1 border-border p-4">
+              <img src="https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/7c88d201-223f-4cd5-ed1b-6bca858be900/f=auto,dpr=2,q=95,fit=scale-down,metadata=none" />
+              <div className="text-xs text-text-secondary text-center pt-2">
+                GDPR
+                <img className="inline ml-0.5" src="svgs/certified.svg" />
+              </div>
+            </div>
+            <div className="border-1 border-border p-4">
+              <img
+                src="https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/3bda4af5-963c-466b-7577-b8b8ec178e00/f=auto,dpr=2,q=95,fit=scale-down,metadata=none"
+                alt=""
+              />
+              <div className="text-xs text-text-secondary text-center pt-2">
+                HIPPA
+                <img className="inline ml-0.5" src="svgs/certified.svg" />
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Image Wrapper */}

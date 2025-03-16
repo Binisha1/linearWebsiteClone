@@ -37,7 +37,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", duration: 1.2, bounce: 0, delay: 0.2 }}
-          className="text-md leading-tight text-text-subtitle mb-6 text-center sm:text-start"
+          className="text-md  text-text-subtitle mb-6 text-center sm:text-start"
         >
           Meet the system for modern software development.
           <br className="hidden sm:block" />
@@ -51,8 +51,8 @@ const HeroSection = () => {
           className="flex flex-wrap items-center gap-4"
         >
           <button className="button-primary">Start building</button>
-          <button className="text-gradient text-sm">
-            Introducing Sub-teams
+          <button className="relative px-2 py-1 tracking-normal cursor-pointer text-sm before:absolute before:inset-0 before:bg-button-background before:opacity-0 hover:before:opacity-100 hover:before:rounded-lg before:-z-10">
+            <span className="text-gradient">Introducing Sub-teams</span>
             <CgChevronRight className="inline" />
           </button>
         </motion.div>
