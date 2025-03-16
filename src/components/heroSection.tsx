@@ -1,31 +1,32 @@
 const HeroSection = () => {
   return (
-    <div>
-      <div className="max-w-4xl container mx-auto px-4 pt-15 pb-32 relative z-10">
-        <div className="">
-          <h1 className="text-4xl  md:text-5xl font-bold leading-tight mb-8">
-            Linear is a purpose-built tool for planning and building products
-          </h1>
-          <p className="text-xl text-tertiary mb-10 leading-relaxed">
-            Meet the system for modern software development.
-            <br />
-            Streamline issues, projects, and product roadmaps.
-          </p>
-          <div className="flex flex-wrap items-center gap-6">
-            <button className="bg-foreground text-black px-3 py-2 rounded-md font-medium  transition">
-              Start building
-            </button>
-            <button
-              onClick={() => {}}
-              className="flex items-center text-gray-400 hover:text-white transition"
-            >
-              Introducing Sub-teams
-            </button>
-          </div>
-        </div>
+    <div className=" space-container pt-34 pb-32 z-10">
+      <h1 className="hidden sm:block max-w-2xl mb-2">
+        Linear is a purpose-built tool for planning and building products
+      </h1>
+      <h1 className="mb-2 sm:hidden  text-center">
+        Plan and build your product
+      </h1>
+      <p className="text-md leading-tight text-text-subtitle mb-6 ">
+        Meet the system for modern software development.
+        <br />
+        Streamline issues, projects, and product roadmaps.
+      </p>
+
+      <div className="flex flex-wrap items-center gap-4">
+        <button className=" .button font-medium  transition">
+          Start building
+        </button>
+        <button className="flex items-center transition">
+          Introducing Sub-teams
+        </button>
       </div>
     </div>
   );
+};
+
+export const HeroTitle = () => {
+  return;
 };
 
 export default HeroSection;

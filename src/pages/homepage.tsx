@@ -1,13 +1,14 @@
+import Footer from "../components/footer";
 import HeroSection from "../components/heroSection";
 import Navbar from "../components/navbar";
+import "../global.css";
 
 const Homepage = () => {
   return (
-    <div className="  bg-background text-primary ">
-      <div className=" mx-auto">
-        <Navbar />
-        <HeroSection />
-      </div>
+    <div className="font-family-inter ">
+      <Navbar />
+      <HeroSection />
+      <Footer />
     </div>
   );
 };

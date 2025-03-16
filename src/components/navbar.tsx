@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router";
-
+import { GiHamburgerMenu } from "react-icons/gi";
+import { useState } from "react";
 const navItems = [
   { title: "Product", link: "/product" },
   { title: "Resources", link: "/resources" },
@@ -8,40 +9,54 @@ const navItems = [
   { title: "Contact", link: "/contact" },
 ];
 const Navbar = () => {
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
   const navigate = useNavigate();
   return (
-    <div className="border-b text-sm border-primary max-w-4xl container sticky top-0 mx-auto px-4 py-4 flex items-center justify-between">
-      <div
-        className="flex items-center pointer-cursor"
-        onClick={() => navigate("/")}
-      >
-        <div className="w-6 h-6 rounded-full bg-white mr-2"></div>
-        <span className="text-lg text-primary font-medium">Linear</span>
-      </div>
-      <div>
-        <nav className="hidden md:flex ml-12 space-x-8">
-          {navItems.map((navItem, index) => (
-            <div
-              key={index}
-              className="text-tertiary hover:text-primary transition"
-              onClick={() => navigate(navItem.link)}
-            >
-              {navItem.title}
-            </div>
-          ))}
-        </nav>
-      </div>
-
-      <div className="flex items-center space-x-4">
-        <a href="" className="text-secondary hover:text-primary transition">
-          Log in
-        </a>
-        <button
-          onClick={() => {}}
-          className="bg-foreground text-black px-3 py-2 rounded-md font-medium  transition"
+    <div className=" bg-background border-border fixed left-0 top-0 w-full  h-16">
+      <div className="space-container  px-2 py-2 flex items-center justify-between">
+        <div
+          className="flex items-center pointer-cursor"
+          onClick={() => navigate("/")}
         >
-          Sign up
-        </button>
+          <img src="linear-icon.png" className="w-6 h-6 " />
+          <span className="text-lg  font-medium">Linear</span>
+        </div>
+        <nav>
+          <ul className=" hidden lg:flex  space-x-4">
+            {navItems.map((navItem, index) => (
+              <li
+                key={index}
+                className="text-text-secondary text-sm transition"
+                onClick={() => navigate(navItem.link)}
+              >
+                {navItem.title}
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <div className="flex items-center space-x-4 ">
+          <a href="" className="text-secondary hover:text-primary transition">
+            Log in
+          </a>
+          <button
+            onClick={() => {}}
+            className="bg-foreground  text-black px-3 py-2 rounded-md font-medium  transition"
+          >
+            Sign up
+          </button>
+
+          <button
+            onClick={() => {
+              setHamburgerOpen((prev) => !prev);
+            }}
+            className={` lg:hidden`}
+          >
+            <span className="sr-only">Toggle menu</span>
+            {hamburgerOpen}
+            <GiHamburgerMenu />
+          </button>
+        </div>
       </div>
     </div>
   );
