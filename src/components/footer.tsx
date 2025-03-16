@@ -61,8 +61,8 @@ const footerLinks = [
 
 const Footer = () => {
   return (
-    <footer className=" pt-6 mb-6 space-container flex flex-wrap justify-between border-t border-border">
-      <div className=" min-w-[8rem] mb-6">
+    <footer className="max-w-[59rem] mx-auto pt-6 mb-6  flex flex-wrap justify-between border-t border-border">
+      <div className=" min-w-[8rem] mb-6  ">
         <img src="linear-icon.png" className="w-6 h-6 " />
       </div>
       <div className="flex flex-wrap gap-4">
