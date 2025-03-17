@@ -2,9 +2,9 @@ import FeatureCard from "./featureCard";
 
 const IssueTracking2 = () => {
   return (
-    <div className="mt-10 space-container pt-0 pb-0 text-normal">
+    <div className="md:mt-10 space-container pt-0 pb-0 text-normal">
       <div className="flex flex-col lg:flex-row justify-between">
-        <div className="flex-col max-w-sm">
+        <div className="flex-col max-w-sm pb-10">
           <p className="font-semibold text-text-primary ">
             Build momentum with Cycles
           </p>
@@ -79,9 +79,9 @@ const BuildMomentunPic = () => {
 
 const LinearInsights = () => {
   return (
-    <div className=" mt-20 lg:mt-40">
+    <div className=" mt-20 ">
       <div className="max-w-sm">
-        <h2 className="mb-1 text-text-primary font-semibold">
+        <h2 className="mb-1 text-text-primary font-semibold text-md">
           Linear Insights
         </h2>
         <p className="text-text-secondary text-sm mb-2">
@@ -93,8 +93,8 @@ const LinearInsights = () => {
           <img src="svgs/rightarrow.svg" className="inline ml-1" alt="" />
         </button>
       </div>
-      <div>
-        <img src="svgs/insight.svg" className="-z-10 -mt-5 img" alt="" />
+      <div className="img-container mt-[-50] lg:mt-[-100px] -z-10">
+        <img src="svgs/insight.svg" className=" img" alt="" />
       </div>
     </div>
   );

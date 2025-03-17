@@ -37,7 +37,7 @@ const card = [
 ];
 const Collaborative = () => {
   return (
-    <section className="bg-gradient py-[40px] md:py-[160px] ">
+    <section className="bg-gradient py-[60px] md:py-[160px] ">
       <div className="max-w-[59rem] mx-auto px-4 flex flex-col lg:flex-row lg:items-center justify-between">
         <div className="mb-4 max-w-md ">
           <div className="inline-block  bg-[#B59AFF] h-[6px] w-[12px] rounded"></div>

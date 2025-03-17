@@ -80,7 +80,7 @@ const HeroSection = () => {
           }}
           className="relative -z-10 mt-[-60px] lg:mt-[-180px]"
         >
-          <div className="img-container">
+          <div className="img-container ">
             <img src="img/homepage1.png" alt="" className="img" />
           </div>
         </motion.div>

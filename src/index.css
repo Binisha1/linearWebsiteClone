@@ -53,6 +53,7 @@
   --spacing-9: 3.6rem;
   --spacing-10: 4rem;
 }
+@custom-variant dark (&:where(.dark, .dark *));
 
 @layer components {
   h1 {
@@ -94,7 +95,8 @@
 }
 
 /* apply font in whole app */
-body {
+body,
+.dark {
   font-family: var(--font-family-inter);
   background-color: var(--color-background);
   color: var(--color-text-primary);
