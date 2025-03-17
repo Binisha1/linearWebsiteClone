@@ -53,8 +53,10 @@
   --spacing-9: 3.6rem;
   --spacing-10: 4rem;
 }
-@custom-variant dark (&:where(.dark, .dark *));
-
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+[data-theme="dark"] {
+  /* Do nothing */
+}
 @layer components {
   h1 {
     @apply text-[2.5rem] leading-[3rem] md:text-[3.2rem] md:leading-[3.75rem]  tracking-tighter text-[var(--color-text-primary)]  font-medium;
@@ -95,8 +97,7 @@
 }
 
 /* apply font in whole app */
-body,
-.dark {
+body {
   font-family: var(--font-family-inter);
   background-color: var(--color-background);
   color: var(--color-text-primary);
