@@ -10,6 +10,7 @@
   --text-2xl: 3.2rem;
   --text-xl: 2.5rem;
   --text-md: 1.313rem;
+  --text-normal: 1.2rem;
   --text-sm: 0.938rem;
   --text-xs: 0.875rem;
 
@@ -19,6 +20,9 @@
   --color-button-background: rgb(40, 40, 44);
   --color-bg-translucent: hsla(0, 0%, 100%, 0.05);
   /* Text Colors */
+  --color-text-green: rgb(104, 204, 88);
+  --color-text-orange: rgb(242, 153, 74);
+  --color-text-red: rgb(197, 40, 40);
   --color-text-white: #fff;
   --color-text-teritary: rgb(208, 214, 224);
   --color-text-primary: rgb(247, 248, 248); /* white */
@@ -77,7 +81,6 @@ body {
   font-family: var(--font-family-inter);
   background-color: var(--color-background);
   color: var(--color-text-primary);
-  letter-spacing: -0.5px;
 }
 
 .hide-scroll-bar {

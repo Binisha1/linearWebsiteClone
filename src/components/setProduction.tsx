@@ -1,3 +1,5 @@
+import SetProduction2 from "./setProduction2";
+
 const SetProduction = () => {
   return (
     <section className="bg-gradient py-[160px] ">
@@ -32,6 +34,7 @@ const SetProduction = () => {
           className="w-full h-auto object-cover object-top mask-image-[radial-gradient(57%_57%_at_50%_35%,_rgb(217,_217,_217)_0px,_rgba(115,_115,_115,_0)_100%)]"
         />
       </div>
+      <SetProduction2 />
     </section>
   );
 };

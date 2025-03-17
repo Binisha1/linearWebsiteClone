@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
-import Button from "./button";
+
 const navItems = [
   { title: "Product", link: "/product" },
   { title: "Resources", link: "/resources" },
@@ -13,8 +13,8 @@ const Navbar = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   const navigate = useNavigate();
   return (
-    <div className=" bg-background border-b border-border fixed left-0 top-0 w-full z-50  h-16">
-      <div className="space-container pt-1  px-1 py-1 flex items-center justify-between">
+    <div className=" bg-background border-b border-border fixed left-0 top-0 w-full z-50  ">
+      <div className="space-container  px-1 py-2 flex items-center justify-between">
         <div
           className="flex items-center cursor-pointer"
           onClick={() => navigate("/")}
