@@ -56,7 +56,10 @@ const Clients = () => {
   );
 };
 
-const AutoScrollImages = ({ allImages }) => {
+interface AutoScrollImagesProps {
+  allImages: { src: string }[];
+}
+const AutoScrollImages = ({ allImages }: AutoScrollImagesProps) => {
   return (
     <div className="relative overflow-hidden w-full bg-white">
       <motion.div

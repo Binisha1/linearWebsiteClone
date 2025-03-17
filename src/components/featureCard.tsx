@@ -1,4 +1,9 @@
-const FeatureCard = ({ emoji, title, subtitle }) => {
+interface FeatureCardProps {
+  emoji: string;
+  title: string;
+  subtitle: string;
+}
+const FeatureCard = ({ emoji, title, subtitle }: FeatureCardProps) => {
   return (
     <div className=" lg:w-40 tracking-tight">
       <div className="flex flex-col ">

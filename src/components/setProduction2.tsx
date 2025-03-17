@@ -156,8 +156,12 @@ function SlantedCard({ color, emoji, text }: SlantedCardProps) {
     </motion.div>
   );
 }
-
-const IdeateComponent = ({ emoji, title, subtitle }) => {
+interface IdeateComponentProps {
+  emoji: string;
+  title: string;
+  subtitle: string;
+}
+const IdeateComponent = ({ emoji, title, subtitle }: IdeateComponentProps) => {
   return (
     <div className="px-15 pt-25 max-w-md">
       <div className="mb-6">

@@ -71,7 +71,12 @@ const Collaborative = () => {
     </section>
   );
 };
-const Card = ({ img, text, subtext }) => {
+interface CardProps {
+  img: string;
+  text: string;
+  subtext: string;
+}
+const Card = ({ img, text, subtext }: CardProps) => {
   return (
     <button className="backdrop-contrast-200 bg-container-background  border-bg-translucent border-1 rounded-xl group px-4 py-4 ">
       <div className="w-65">
