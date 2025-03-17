@@ -24,7 +24,7 @@ const IssueTracking2 = () => {
         </div>
       </div>
       <LinearInsights />
-      <div className="flex justify-center items-center">
+      <div className=" flex justify-center items-center">
         <div className="grid lg:grid-cols-4 grid-cols-2 gap-8 items-center justify-center ">
           <FeatureCard
             emoji={"svgs/feature11.svg"}
@@ -79,7 +79,7 @@ const BuildMomentunPic = () => {
 
 const LinearInsights = () => {
   return (
-    <div className=" mt-20 ">
+    <div className=" mt-20 mb-20">
       <div className="max-w-sm">
         <h2 className="mb-1 text-text-primary font-semibold text-md">
           Linear Insights
@@ -93,8 +93,8 @@ const LinearInsights = () => {
           <img src="svgs/rightarrow.svg" className="inline ml-1" alt="" />
         </button>
       </div>
-      <div className="img-container mt-[-50] lg:mt-[-100px] -z-10">
-        <img src="svgs/insight.svg" className=" img" alt="" />
+      <div className=" lg:-mt-6 -z-10">
+        <img src="svgs/insight.svg" className=" " alt="" />
       </div>
     </div>
   );
