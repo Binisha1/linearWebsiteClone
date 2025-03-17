@@ -1,10 +1,12 @@
 const FeatureCard = ({ emoji, title, subtitle }) => {
   return (
-    <div className="w-45 tracking-tight">
+    <div className=" lg:w-40 tracking-tight">
       <div className="flex flex-col ">
-        <div className=" flex flex-row ">
-          <img src={emoji} alt="" />{" "}
-          <span className="ml-2 text-xs text-text-primary">{title}</span>
+        <div className=" flex flex-col md:flex-row ">
+          <img src={emoji} className="w-3 h-3" alt="" />{" "}
+          <span className="mt-1 md:mt-0 md:ml-2 text-xs text-text-primary">
+            {title}
+          </span>
         </div>
         <p className="mt-2 text-xs text-text-secondary">{subtitle}</p>
       </div>

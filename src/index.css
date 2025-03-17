@@ -6,6 +6,8 @@
   --breakpoint-sm: ;
   --breakpoint-md: 640px;
   --breakpoint-lg: 770px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1500px;
   /* Fonts */
   --font-family-inter: "Inter Variable" "SF Pro Display", -apple-system,
     BlinkMacSystem;
@@ -54,10 +56,10 @@
 
 @layer components {
   h1 {
-    @apply text-[3.2rem] tracking-tighter text-[var(--color-text-primary)] leading-[3.75rem] font-medium;
+    @apply text-[2.5rem] leading-[3rem] md:text-[3.2rem] md:leading-[3.75rem]  tracking-tighter text-[var(--color-text-primary)]  font-medium;
   }
   .space-container {
-    @apply max-w-[59rem] py-[160px] mx-auto px-4;
+    @apply max-w-[59rem] lg:py-[160px] mx-auto px-4 py-[40px];
   }
   .bg-gradient {
     @apply inset-0 w-full h-full bg-gradient-to-b from-[var(--color-bg-translucent)] to-transparent;

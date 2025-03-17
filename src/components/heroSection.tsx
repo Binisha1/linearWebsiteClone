@@ -17,7 +17,7 @@ const HeroSection = () => {
   return (
     <section className="">
       <div ref={containerRef} className="  ">
-        <div className="space-container  ">
+        <div className="space-container  mt-15 md:mt-20 lg:mt-0">
           <div className="flex flex-col items-center md:items-start">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -78,7 +78,7 @@ const HeroSection = () => {
             bounce: 0,
             delay: 0.8,
           }}
-          className="relative -z-10 mt-[-160px]"
+          className="relative -z-10 mt-[-60px] lg:mt-[-180px]"
         >
           <div className="img-container">
             <img src="img/homepage1.png" alt="" className="img" />

@@ -1,7 +1,7 @@
 const PlanPresent = () => {
   return (
-    <section className="max-w-[59rem] pb-20 mx-auto px-4 flex flex-row items-center justify-between">
-      <h3 className="text-xl font-semibold tracking-tighter">
+    <section className="max-w-[59rem] pb-20 mx-auto px-4 flex flex-col lg:flex-row lg:items-center justify-between">
+      <h3 className="mt-20 pb-4 lg:mt-0 text-xl font-semibold tracking-tighter">
         Plan the present. Build the future
       </h3>
       <div className="space-x-1">

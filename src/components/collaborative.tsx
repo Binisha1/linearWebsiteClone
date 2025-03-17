@@ -37,8 +37,8 @@ const card = [
 ];
 const Collaborative = () => {
   return (
-    <section className="bg-gradient py-[160px] ">
-      <div className="max-w-[59rem] mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <section className="bg-gradient py-[40px] md:py-[160px] ">
+      <div className="max-w-[59rem] mx-auto px-4 flex flex-col lg:flex-row lg:items-center justify-between">
         <div className="mb-4 max-w-md ">
           <div className="inline-block  bg-[#B59AFF] h-[6px] w-[12px] rounded"></div>
           <span className="cursor-pointer text-xs text-text-teritary  hover:space-x-0.5">
@@ -56,8 +56,8 @@ const Collaborative = () => {
           focused.
         </div>
       </div>
-      <div className="lg:pl-60 pr-10 mt-4  flex overflow-x-scroll hide-scroll-bar scroll-smooth">
-        <div className="flex flex-nowrap gap-1">
+      <div className=" xl:pl-50 2xl:pl-80  mx-auto  mt-4  flex overflow-x-scroll hide-scroll-bar scroll-smooth">
+        <div className="flex flex-nowrap gap-1 lg:justify-center  ">
           {card.map((card, index) => (
             <Card
               key={index}

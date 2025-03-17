@@ -34,6 +34,7 @@ const Clients = () => {
       { src: "svgs/partners/svgexport-30.svg" },
     ],
   ];
+  const allImages = imageGroups.flat();
 
   return (
     <section className="space-container pt-0 font-medium text-center items-center justify-center leading-4  ">
@@ -43,12 +44,43 @@ const Clients = () => {
       <p className="text-sm lg:text-md text-text-secondary">
         From next-gen startups to established enterprises.
       </p>
-      <div className="lg:px-8 grid grid-cols-2 gap-25 md:grid-cols-3  mt-6 place-items-center">
+      <div className="lg:hidden mt-4">
+        <AutoScrollImages allImages={allImages} />
+      </div>
+      <div className="hidden lg:px-8 lg:grid grid-cols-2 gap-25 md:grid-cols-3  mt-6 place-items-center">
         {imageGroups.map((images, index) => (
           <ClientImage key={index} images={images} />
         ))}
       </div>
     </section>
+  );
+};
+
+const AutoScrollImages = ({ allImages }) => {
+  return (
+    <div className="relative overflow-hidden w-full bg-white">
+      <motion.div
+        className="flex space-x-6"
+        animate={{
+          x: ["0%", "-100%"],
+        }}
+        transition={{
+          ease: "linear",
+          duration: 15, // Adjust speed here
+          repeat: Infinity,
+        }}
+        style={{ whiteSpace: "nowrap" }}
+      >
+        {[...allImages, ...allImages].map((image, index) => (
+          <img
+            key={index}
+            src={image.src}
+            alt={`partner-${index}`}
+            className="w-24 h-24 object-contain mx-2"
+          />
+        ))}
+      </motion.div>
+    </div>
   );
 };
 

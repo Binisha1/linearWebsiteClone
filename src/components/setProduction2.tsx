@@ -1,14 +1,15 @@
 import { motion } from "motion/react";
-import { AnimatePresence } from "motion/react";
 import { useState } from "react";
 import FeatureCard from "./featureCard";
 
 const SetProduction2 = () => {
   return (
-    <div className="space-container pb-0 text-normal">
-      <div className="flex flex-row justify-between">
+    <div className="space-container pt-0 pb-0 text-normal">
+      <div className="flex flex-col lg:flex-row justify-between">
         <div className="flex-col max-w-sm">
-          <p className="text-text-primary ">Manage projects end-to-end</p>
+          <p className="text-text-primary font-semibold">
+            Manage projects end-to-end
+          </p>
           <p className="text-text-secondary">
             Consolidate specs, milestones, tasks, and other documentation in one
             centralized location.
@@ -16,46 +17,60 @@ const SetProduction2 = () => {
           <ProjectOverview />
         </div>
         <div className="flex-col max-w-sm">
-          <p className="text-text-primary ">Project updates</p>
+          <p className="text-text-primary font-semibold ">Project updates</p>
           <p className="text-text-secondary mb-20">
             Communicate progress and project health with built-in project
             updates.
           </p>
-          <div className="relative ">
+          <div className="relative h-80 overflow-hidden">
             <div className="absolute top-0 left-0 opacity-30 hover:opacity-100">
-              <SlantedCard color="var(--color-text-red)" />
+              <SlantedCard
+                color="var(--color-text-red)"
+                emoji="svgs/slantcard1.svg"
+                text="Off track"
+              />
             </div>
             <div className="absolute top-8 left-6 opacity-40 hover:opacity-100">
-              <SlantedCard color="var(--color-text-orange)" />
+              <SlantedCard
+                color="var(--color-text-orange)"
+                emoji="svgs/slantcard2.svg"
+                text="At risk"
+              />
             </div>
             <div className="absolute top-26 left-20 hover:opacity-100">
-              <SlantedCard color="var(--color-text-green)" />
+              <SlantedCard
+                color="var(--color-text-green)"
+                emoji="svgs/slantcard3.svg  "
+                text="On track"
+              />
             </div>
           </div>
         </div>
       </div>
       <Ideate />
-      <div className="flex flex-row justify-between mt-30">
-        <FeatureCard
-          emoji={"svgs/feature1.svg"}
-          title={"Initiatives"}
-          subtitle={"Coordinate strategic product efforts."}
-        />
-        <FeatureCard
-          emoji={"svgs/feature2.svg"}
-          title={"Cross-team projects"}
-          subtitle={"Collaborate across teams and departments."}
-        />
-        <FeatureCard
-          emoji={"svgs/feature3.svg"}
-          title={"Milestones"}
-          subtitle={"Break projects down into concrete phases."}
-        />
-        <FeatureCard
-          emoji={"svgs/feature4.svg"}
-          title={"Progress insights"}
-          subtitle={"Track scope, velocity, and progress over time."}
-        />
+      <div className="flex justify-center items-center">
+        <div className="grid lg:grid-cols-4 grid-cols-2 gap-8 items-center justify-center mt-30">
+          <FeatureCard
+            emoji={"svgs/feature1.svg"}
+            title={"Initiatives"}
+            subtitle={"Coordinate strategic product efforts."}
+          />
+          <FeatureCard
+            emoji={"svgs/feature2.svg"}
+            title={"Cross-team projects"}
+            subtitle={"Collaborate across teams and departments."}
+          />
+          <FeatureCard
+            emoji={"svgs/feature3.svg"}
+            title={"Milestones"}
+            subtitle={"Break projects down into concrete phases."}
+          />
+          <FeatureCard
+            emoji={"svgs/feature4.svg"}
+            title={"Progress insights"}
+            subtitle={"Track scope, velocity, and progress over time."}
+          />
+        </div>
       </div>
     </div>
   );
@@ -73,19 +88,44 @@ function ProjectOverview() {
           <div>Resources</div>
           <div>Milestones</div>
         </div>
-        <div className="space-y-2">
-          <div>In Progress ENG </div>
-          <div>Exploration User interviews</div>
-          <div>Design Review 100%</div>
-          <div>Internal Alpha</div>
-          <div>GA</div>
+        <div className="space-y-2 text-xs tracking-tighter">
+          <div>
+            <img src="svgs/projecto1.svg" className="inline mr-1 " alt="" />
+            In Progress
+            <img src="svgs/projecto2.svg" className="inline m-1 " alt="" />
+            EN
+          </div>
+          <div>
+            {" "}
+            <img src="svgs/projecto4.svg" className="inline mr-1 " alt="" />
+            Exploration User interviews
+          </div>
+          <div>
+            {" "}
+            <img src="svgs/projecto6.svg" className="inline mr-1 " alt="" />
+            Design Review 100%
+          </div>
+          <div>
+            {" "}
+            <img src="svgs/projecto6.svg" className="inline mr-1 " alt="" />
+            Internal Alpha
+          </div>
+          <div>
+            {" "}
+            <img src="svgs/projecto4.svg" className="inline mr-1 " alt="" />
+            GA
+          </div>
         </div>
       </div>
-      <div></div>
     </div>
   );
 }
-function SlantedCard({ color }: { color: string }) {
+interface SlantedCardProps {
+  color: string;
+  emoji: string;
+  text: string;
+}
+function SlantedCard({ color, emoji, text }: SlantedCardProps) {
   return (
     <motion.div
       whileHover={{ y: -20 }}
@@ -104,7 +144,8 @@ function SlantedCard({ color }: { color: string }) {
           style={{ color }}
           className={`font-semibold flex items-center gap-1`}
         >
-          On track
+          <img src={emoji} alt="" />
+          {text}
         </p>
 
         <p className="mt-2 text-text-primary">
@@ -170,12 +211,12 @@ const Ideate = () => {
   ];
   const [selectedTab, setSelectedTab] = useState(mapping[0]);
   return (
-    <div className="flex flex-row mt-8 justify-between">
-      <div className="flex flex-col mt-15 w-50">
+    <div className="flex flex-col lg:flex-row mt-8 justify-between">
+      <div className="flex flex-col mt-15 lg:w-50">
         <h2 className="font-semibold text-md mb-4">
           Ideate and specify what to build next
         </h2>
-        <ul>
+        <ul className="mb-4">
           {mapping.map((item) => (
             <li
               key={item.label}
@@ -209,7 +250,7 @@ const Ideate = () => {
         </ul>
       </div>
       <div className="">
-        <div className="relative ">
+        <div className="relative overflow-hidden">
           <img
             className="max-w-md lg:mr-20"
             src="svgs/collaborative.svg"

@@ -1,8 +1,8 @@
 const BuiltStrong = () => {
   return (
-    <section className="bg-gradient py-[160px] ">
-      <div className="lg:ml-54  flex flex-row justify-between">
-        <div className=" lg:w-2/4 pr-32 px-4 flex flex-col ">
+    <section className="bg-gradient space-container ">
+      <div className="  flex flex-row justify-between">
+        <div className=" lg:w-2/4 flex flex-col ">
           <div className="mb-4 max-w-sm items-center">
             <div className="inline-block  bg-background h-[6px] w-[12px] border-1 border-text-secondary rounded"></div>
             <span className="text-xs text-text-teritary  hover:space-x-0.5">
@@ -20,27 +20,27 @@ const BuiltStrong = () => {
           <div className="text-xs mt-6">
             <div className="flex flex-row justify-between mb-4">
               <p>Linear Sync Engine</p>
-              <p className="text-text-secondary w-2/5">
+              <p className="text-text-secondary w-3/5 lg:w-2/5">
                 Built with a high-performance architecture and an obsessive
                 focus on speed.
               </p>
             </div>
             <div className="flex flex-row justify-between mb-4">
               <p>Enterprise-ready security</p>
-              <p className="text-text-secondary w-2/5">
+              <p className="text-text-secondary w-3/5 lg:w-2/5">
                 Best-in-class security practices keep your work safe and secure
                 at every layer.
               </p>
             </div>
             <div className="flex flex-row justify-between mb-4">
               <p>Engineered for scale</p>
-              <p className="text-text-secondary w-2/5 ">
+              <p className="text-text-secondary w-3/5 lg:w-2/5 ">
                 Built for teams of all sizes. From early-stage startups to
                 global enterprises.
               </p>
             </div>
           </div>
-          <div className="flex flex-row">
+          <div className="flex flex-row max-w-sm">
             <div className="border-1 border-border p-4">
               <img src="https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/cc904d39-7051-4326-66a3-a8bee9623b00/f=auto,dpr=2,q=95,fit=scale-down,metadata=none" />
               <div className="text-xs text-text-secondary text-center pt-2">
@@ -70,7 +70,7 @@ const BuiltStrong = () => {
         </div>
 
         {/* Image Wrapper */}
-        <div className="lg:w-3/4">
+        <div className="lg:w-3/5 hidden lg:block">
           <img
             src="svgs/strongFoundation.svg"
             alt=""

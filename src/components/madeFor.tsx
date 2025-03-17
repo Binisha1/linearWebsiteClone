@@ -1,12 +1,12 @@
 const MadeFor = () => {
   return (
     <section className=" bg-gradient">
-      <div className="space-container">
+      <div className=" space-container ">
         <div className="flex flex-col lg:flex-row lg:items-center">
           <div className="lg:w-1/2">
             <h1>Made for modern product teams</h1>
           </div>
-          <div className="lg:w-1/2 lg:px-4 text-sm ">
+          <div className="lg:w-1/2 lg:px-4 text-sm mt-4 ">
             <span className="text-text-secondary">
               Linear is shaped by the practices and principles that distinguish
               world-class product teams from the rest: relentless focus, fast
