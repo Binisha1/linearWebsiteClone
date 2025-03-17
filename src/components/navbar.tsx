@@ -14,7 +14,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   return (
     <div className=" bg-background border-b border-border fixed left-0 top-0 w-full z-50  ">
-      <div className="space-container  px-1 py-2 flex items-center justify-between">
+      <div className="space-container  px-4 py-2 flex items-center justify-between">
         <div
           className="flex items-center cursor-pointer"
           onClick={() => navigate("/")}

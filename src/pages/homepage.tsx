@@ -1,5 +1,4 @@
 import BuiltStrong from "../components/builtStrong";
-import Clients from "../components/clients";
 import Collaborative from "../components/collaborative";
 import Footer from "../components/footer";
 import HeroSection from "../components/heroSection";
@@ -15,7 +14,6 @@ const Homepage = () => {
     <div className="font-family-inter ">
       <Navbar />
       <HeroSection />
-
       <MadeFor />
       <SetProduction />
       <IssueTracking />

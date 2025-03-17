@@ -36,11 +36,11 @@ const Clients = () => {
   ];
 
   return (
-    <section className="space-container font-medium text-center items-center justify-center leading-4  py-16">
-      <p className="text-md text-text-primary">
+    <section className="space-container pt-0 font-medium text-center items-center justify-center leading-4  ">
+      <p className="text-sm text-text-secondary lg:text-md lg:text-text-primary">
         Powering the world’s best product teams.
       </p>
-      <p className="text-md text-text-secondary">
+      <p className="text-sm lg:text-md text-text-secondary">
         From next-gen startups to established enterprises.
       </p>
       <div className="lg:px-8 grid grid-cols-2 gap-25 md:grid-cols-3  mt-6 place-items-center">

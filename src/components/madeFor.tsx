@@ -37,7 +37,11 @@ const MadeFor = () => {
   );
 };
 
-const Card = ({ img, text }) => {
+interface CardProps {
+  img: string;
+  text: string;
+}
+const Card = ({ img, text }: CardProps) => {
   return (
     <button className="bg-text-black group px-4 py-2 ">
       <div className="w-60 group-hover:brightness-200">
