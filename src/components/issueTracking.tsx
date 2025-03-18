@@ -26,13 +26,8 @@ const IssueTracking = () => {
         </div>
       </div>
 
-      {/* Image Wrapper */}
       <div className="relative img-container lg:mt-[-90px]">
-        <img
-          src="https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/d4c9c051-1515-488f-00aa-1553b9322900/f=auto,dpr=2,q=95,fit=scale-down,metadata=none"
-          alt=""
-          className="img"
-        />
+        <img src="img/issueTrack.png" alt="" className="img" />
       </div>
       <IssueTracking2 />
     </section>

@@ -5,7 +5,7 @@ const PlanPresent = () => {
         Plan the present. Build the future
       </h3>
       <div className="space-x-1">
-        <button className="button-primary  bg-button-background  text-text-primary ">
+        <button className="button-primary  bg-button-background  text-text-primary hover:cursor-pointer hover:brightness-150">
           Talk to sales
         </button>
         <button className="button-primary ">Get Started</button>

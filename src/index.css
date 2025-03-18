@@ -134,11 +134,7 @@
   }
   .img {
     @apply w-full h-full object-cover object-top;
-    mask-image: radial-gradient(
-      90.83% 90.84% at 50% 16.17%,
-      #d9d9d9 0%,
-      rgba(165, 160, 160, 0) 100%
-    );
+    mask-image: ;
   }
 }
 

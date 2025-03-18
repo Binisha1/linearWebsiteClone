@@ -1,36 +1,36 @@
 const card = [
   {
-    img: "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/5ad1ce36-6baf-4741-66b7-a9939f57cd00/f=auto,dpr=2,q=95,fit=scale-down,metadata=none",
+    img: "img/collab1.avif",
     text: "Customer Requests",
     subtext: "Build what customers actually wants",
   },
   {
-    img: "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/45d00e03-8783-4225-f7f7-e49e1042e000/f=auto,dpr=2,q=95,fit=scale-down,metadata=none",
+    img: "img/collab2.avif",
     text: "Powerful git workflows",
     subtext: "Automate pull requests and commit workflows",
   },
   {
-    img: "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/2b394a72-ba7c-40d7-8f93-3b837b296d00/f=auto,dpr=2,q=95,fit=scale-down,metadata=none",
+    img: "img/collab3.avif",
     text: "linear Asks",
     subtext: "Turn workplace requests into actionable issues",
   },
   {
-    img: "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/906ad833-45a5-4b19-e4de-153896e13e00/f=auto,dpr=2,q=95,fit=scale-down,metadata=none",
+    img: "img/collab4.avif",
     text: "Linear integrations",
     subtext: "100+ ways to enhance your Linear experience",
   },
   {
-    img: "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/0e7273bb-e885-4715-4f2d-bc67fb4eb300/f=auto,dpr=2,q=95,fit=scale-down,metadata=none",
+    img: "img/collab7.avif",
     text: "Figma integration",
     subtext: "Bridge the gap between engineering and design",
   },
   {
-    img: "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/71e8ff5e-2889-4b4d-e12c-d3bb8d817700/f=auto,dpr=2,q=95,fit=scale-down,metadata=none",
+    img: "img/collab5.avif",
     text: "Figma integration",
     subtext: "Bridge the gap between engineering and design",
   },
   {
-    img: "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/a516badb-c0aa-4d0d-2ffa-965b529e1a00/f=auto,dpr=2,q=95,fit=scale-down,metadata=none",
+    img: "img/collab6.avif",
     text: "Built for developers",
     subtext: "Build your own add-ons with Linear API",
   },

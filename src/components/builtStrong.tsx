@@ -1,7 +1,7 @@
 const BuiltStrong = () => {
   return (
-    <section className="bg-gradient space-container ">
-      <div className="  flex flex-row justify-between">
+    <section className="bg-gradient  ">
+      <div className=" space-container flex flex-row justify-between">
         <div className=" lg:w-2/4 flex flex-col ">
           <div className="mb-4 max-w-sm items-center">
             <div className="inline-block  bg-background h-[6px] w-[12px] border-1 border-text-secondary rounded"></div>
@@ -18,23 +18,23 @@ const BuiltStrong = () => {
             safe, and blazing fast.
           </div>
           <div className="text-xs mt-6">
-            <div className="flex flex-row justify-between mb-4">
+            <div className="flex flex-col md:flex-row justify-between mb-4">
               <p>Linear Sync Engine</p>
-              <p className="text-text-secondary w-3/5 lg:w-2/5">
+              <p className="text-text-secondary md:w-3/5 lg:w-2/5">
                 Built with a high-performance architecture and an obsessive
                 focus on speed.
               </p>
             </div>
-            <div className="flex flex-row justify-between mb-4">
+            <div className="flex flex-col md:flex-row justify-between mb-4">
               <p>Enterprise-ready security</p>
-              <p className="text-text-secondary w-3/5 lg:w-2/5">
+              <p className="text-text-secondary md:w-3/5 lg:w-2/5">
                 Best-in-class security practices keep your work safe and secure
                 at every layer.
               </p>
             </div>
-            <div className="flex flex-row justify-between mb-4">
+            <div className="flex flex-col md:flex-row justify-between mb-4">
               <p>Engineered for scale</p>
-              <p className="text-text-secondary w-3/5 lg:w-2/5 ">
+              <p className="text-text-secondary md:w-3/5 lg:w-2/5 ">
                 Built for teams of all sizes. From early-stage startups to
                 global enterprises.
               </p>
@@ -42,7 +42,7 @@ const BuiltStrong = () => {
           </div>
           <div className="flex flex-row max-w-sm">
             <div className="border-1 border-border p-4">
-              <img src="https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/cc904d39-7051-4326-66a3-a8bee9623b00/f=auto,dpr=2,q=95,fit=scale-down,metadata=none" />
+              <img src="img/soc.avif" />
               <div className="text-xs text-text-secondary text-center pt-2">
                 SOC 2
                 <img className="inline ml-0.5" src="svgs/certified.svg" />
@@ -50,17 +50,14 @@ const BuiltStrong = () => {
             </div>
 
             <div className="border-1 border-border p-4">
-              <img src="https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/7c88d201-223f-4cd5-ed1b-6bca858be900/f=auto,dpr=2,q=95,fit=scale-down,metadata=none" />
+              <img src="img/gdpr.avif" />
               <div className="text-xs text-text-secondary text-center pt-2">
                 GDPR
                 <img className="inline ml-0.5" src="svgs/certified.svg" />
               </div>
             </div>
             <div className="border-1 border-border p-4">
-              <img
-                src="https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/3bda4af5-963c-466b-7577-b8b8ec178e00/f=auto,dpr=2,q=95,fit=scale-down,metadata=none"
-                alt=""
-              />
+              <img src="img/hippa.avif" alt="" />
               <div className="text-xs text-text-secondary text-center pt-2">
                 HIPPA
                 <img className="inline ml-0.5" src="svgs/certified.svg" />

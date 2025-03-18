@@ -63,17 +63,17 @@ const Footer = () => {
   return (
     <footer className="max-w-[59rem] mx-auto pt-6 mb-6  flex flex-wrap justify-between border-t border-border">
       <div className=" min-w-[8rem] mb-6  ">
-        <img src="linear-icon.png" className="w-6 h-6 " />
+        <img src="svgs/logo.svg" className="w-4 h-4 " />
       </div>
       <div className="flex flex-wrap gap-4">
-        {footerLinks.map((column) => (
-          <div className="min-w-[8rem]">
+        {footerLinks.map((column, index) => (
+          <div key={index} className="min-w-[8rem]">
             <h3 className="mb-3  text-xs font-medium text-text-primary">
               {column.title}
             </h3>
             <ul>
-              {column.links.map((link) => (
-                <li className="text-xs mb-2 text-text-secondary">
+              {column.links.map((link, ind) => (
+                <li key={ind} className="text-xs mb-2 text-text-secondary">
                   {link.title}
                 </li>
               ))}

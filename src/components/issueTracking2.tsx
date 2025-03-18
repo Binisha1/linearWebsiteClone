@@ -88,7 +88,7 @@ const LinearInsights = () => {
           Take the guesswork out of product planning with realtime, actionable
           data analytics.
         </p>
-        <button className="button-primary  bg-button-background text-text-secondary hover:text-text-primary ">
+        <button className="button-primary  bg-button-background text-text-secondary hover:cursor-pointer hover:brightness-150  hover:text-text-primary ">
           Learn more
           <img src="svgs/rightarrow.svg" className="inline ml-1" alt="" />
         </button>

@@ -24,9 +24,7 @@ const MadeFor = () => {
           <div className="flex flex-nowrap gap-1">
             <Card
               text={"Purpose-built for product development"}
-              img={
-                "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/fc435ee2-fabf-4f10-5a37-d89874f4bf00/f=auto,dpr=2,q=95,fit=scale-down,metadata=none"
-              }
+              img={"img/made1.avif"}
             />
             <Card text={"Designed to move fast"} img={"img/made2.jpeg"} />
             <Card text={"Crafted to perfection"} img={"img/made3.jpeg"} />
