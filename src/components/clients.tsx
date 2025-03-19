@@ -47,10 +47,18 @@ const Clients = () => {
       <div className="lg:hidden mt-4">
         <AutoScrollImages allImages={allImages} />
       </div>
-      <div className="hidden lg:px-8 lg:grid grid-cols-2 gap-25 md:grid-cols-3  mt-6 place-items-center">
+      <div className="relative hidden lg:px-8 lg:grid grid-cols-2 gap-14 md:grid-cols-3 mt-6 place-items-center group min-h-[240px]">
+        {/* Client Images */}
         {imageGroups.map((images, index) => (
           <ClientImage key={index} images={images} />
         ))}
+        {/* Full-Screen Background Blur on Hover */}
+        <div className="absolute inset-0 w-full h-full bg-white/10 backdrop-blur-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
+          <button className="button-primary px-2 py-0.5 text-xs border border-border bg-button-background text-text-primary hover:cursor-pointer hover:brightness-100 shadow-[rgba(0,0,0,0.2)_0px_4px_24px_0px]">
+            Meet our Customers
+            <img src="svgs/rightarrow.svg" className="inline ml-1" alt="" />
+          </button>
+        </div>
       </div>
     </section>
   );
