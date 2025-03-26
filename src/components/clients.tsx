@@ -77,7 +77,7 @@ const AutoScrollImages = ({ allImages }: AutoScrollImagesProps) => {
         }}
         transition={{
           ease: "linear",
-          duration: 15, // Adjust speed here
+          duration: 15,
           repeat: Infinity,
         }}
         style={{ whiteSpace: "nowrap" }}

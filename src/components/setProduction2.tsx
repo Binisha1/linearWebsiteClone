@@ -5,7 +5,7 @@ import FeatureCard from "./featureCard";
 const SetProduction2 = () => {
   return (
     <div className="space-container pt-0 pb-0 text-normal">
-      <div className="flex flex-col lg:flex-row justify-between">
+      <div className="flex flex-col lg:flex-row xl:mt-30 justify-between">
         <div className="flex-col max-w-sm">
           <p className="text-text-primary font-semibold">
             Manage projects end-to-end
@@ -136,9 +136,7 @@ function SlantedCard({ color, emoji, text }: SlantedCardProps) {
       className=" text-xs tracking-normal   hover:brightness-120 flex flex-col items-center transition duration-200"
     >
       <div
-        className={` hover:opacity-100 max-w-xs p-3 rounded-2l  bg-text-black
-     
-      backdrop-blur-md transform rotate-[-5deg]`}
+        className={` hover:opacity-100 max-w-xs p-3 rounded-2l  bg-text-black transform rotate-[-5deg]`}
       >
         <p
           style={{ color }}
@@ -224,9 +222,7 @@ const Ideate = () => {
           {mapping.map((item) => (
             <li
               key={item.label}
-              className={`flex text-sm mb-1 items-center cursor-pointer ${
-                item == selectedTab ? "text-sm" : "text-2xl"
-              } `}
+              className={`flex text-sm mb-1 items-center cursor-pointer `}
               onClick={() => {
                 setSelectedTab(item);
               }}

@@ -3,7 +3,7 @@ import FeatureCard from "./featureCard";
 const IssueTracking2 = () => {
   return (
     <div className="md:mt-10 space-container pt-0 pb-0 text-normal">
-      <div className="flex flex-col lg:flex-row justify-between">
+      <div className="flex flex-col lg:flex-row xl:mt-30 justify-between">
         <div className="flex-col max-w-sm pb-10">
           <p className="font-semibold text-text-primary ">
             Build momentum with Cycles
